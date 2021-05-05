@@ -172,7 +172,7 @@ color:#eeac99;
 }
 
 #crab-game {
-    width: 350px;
+    width: 75%;
     height: auto;
     border-style: solid;
     border-color: #5D001E;
@@ -196,7 +196,7 @@ color:#eeac99;
 }
 
 .overlay2 {
-    margin-top: 21.5rem;
+    margin-top: 15.5rem;
     padding: .1rem;
     width: inherit;
     height: inherit;
@@ -209,8 +209,8 @@ color:#eeac99;
   position: absolute;
 }
 
-#prework-about-me {
-    width: 350px;
+#foodly {
+    width: 75%;
     height: auto;
     border-style: solid;
     border-color: #5D001E;
