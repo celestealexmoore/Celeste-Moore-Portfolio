@@ -4,5 +4,5 @@ This portfolio features core skills I learned during Week 2 of my coding bootcam
 
 This is the link to view my portfolio: (https://celestealexmoore.github.io/Celeste-Moore-Portfolio/)
 
-![Photo 1](./photos/screen-shot-website.png)
+![Photo 1](./assets/photos/screen-shot-website.png)
 
