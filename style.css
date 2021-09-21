@@ -38,11 +38,11 @@ body {
 }
 
 .navigation-bar {
-    position: relative;
-    bottom: 1em;
+    position: fixed;
+    /* bottom: 1em;
     right: 0;
     left: 0;    
-    height: 32px;
+    height: 32px; */
     background-color: #5D001E;
     padding: 5px 0 5px 0;
     display: flex;
@@ -52,7 +52,7 @@ body {
 }
 
 ul.navigation-bar {
-    margin-top: 15px;
+    margin-top: 0px;
 }
 
 .navigation-bar li {

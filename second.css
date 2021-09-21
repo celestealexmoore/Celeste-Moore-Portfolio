@@ -1,9 +1,27 @@
 body{
 padding: 3rem;
 margin-top: -30px;
+background-color: rgb(231, 201, 206);
+color: rgb(83, 83, 83);
 }
 
 header{
     text-align: center;
 }
 
+a{
+    color:rgb(83, 83, 83);
+}
+
+a:hover{
+    color: white;
+}
+
+h3{
+    text-align: center;
+    border-bottom: 1px gray solid;
+}
+
+ul{
+    margin-top: 1px;
+}
