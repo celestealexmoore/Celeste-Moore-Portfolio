@@ -92,65 +92,9 @@ color:#eeac99;
     color: gray;
 }
 
-#pastry-photos {
-    flex: inherit;
-    justify-content: space-evenly;
-    align-items: center;
-    display: flex;
-}
-
-/* Photos in order left-to-right.*/
-
-#plated-dessert {
-    width: 15%;
-    height: auto;
-    background-color: whitesmoke;
-    border-radius: 10em;
-    border-style: solid;
-    border-width: .15em;
-    border-color: #5D001E;
-}
-
-#croissants {
-    width: 12%;
-    height: auto;
-    background-color: whitesmoke;
-    border-radius: 20em;
-    border-style: solid;
-    border-color: #5D001E;
-    border-width: .15em;
-}
-#snickers-rolls {
-    width: 15%;
-    height: auto;
-    background-color: whitesmoke;
-    border-radius: 10em;
-    border-style: solid;
-    border-color: #5D001E;
-    border-width: .15em;
-}
-#wedding-cake {
-    width: 12%;
-    height: auto;
-    background-color: whitesmoke;
-    border-radius: 10em;
-    border-style: solid;
-    border-color: #5D001E;
-    border-width: .15em;
-}
-#doughnuts {
-    width: 14.5%;
-    height: auto;
-    background-color: whitesmoke;
-    border-radius: 10em;
-    border-style: solid;
-    border-color: #5D001E;
-    border-width: .15em;
-}
-
-#portfolio-box {
+#portfolio {
     Background-color: rgb(253, 209, 217);
-    border-style: solid color #c83349 12px;
+    border-style: solid #c83349 12px;
     padding: 30px;
     color: rgb(112, 109, 109);
     font-size: large;
@@ -161,73 +105,50 @@ color:#eeac99;
     color: gray;
 }
 
-#portfolio-box {
-    height: auto;
-    padding: 10px;
-    display: flex;
+#projects{
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: row;
+    Background-color: rgb(253, 209, 217);
 }
 
 #crab-game {
-    width: 75%;
+    width: 400px;
     height: auto;
-    border-style: solid;
-    border-color: #5D001E;
-    border-width: 2px;
-    margin-top: 2rem;
+    border: #5D001E solid 5px;
+    background-color: #E3E2DF;
+    margin:30px;
     flex-wrap: wrap;
-    align-content: center;
+    align-self: center;
 }
 .overlay {
-    margin-top: 15.5rem;
-    padding: .1rem;
-    width: inherit;
-    height: inherit;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  color: white;
-  font-size: 18px;
-  align-items: center;
-  position: absolute;
-}
-
-.overlay2 {
-    margin-top: 15.5rem;
-    padding: .1rem;
-    width: inherit;
-    height: inherit;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  color: white;
-  font-size: 18px;
-  align-content: center;
-  position: absolute;
+    margin: 30px;
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+    align-items: center;
+    position: absolute;
 }
 
 #foodly {
-    width: 75%;
+    width: 400px;
     height: auto;
-    border-style: solid;
-    border-color: #5D001E;
-    border-width: 2px;
-    margin-top: 1rem;
+    border: #5D001E solid 5px;
+    background-color: #E3E2DF;
+    margin:30px;
     flex-wrap: wrap;
-    align-items: center;
+    align-self: center;
 }
 
 ul {
     list-style-type: square;
     font-size: large;
 }
- 
  /* Footer Section */
 
- #section3{
-     flex-wrap: nowrap;
- }
+#section3{
+    flex-wrap: nowrap;
+}
 
 #footer {
     height: auto;
@@ -279,23 +200,7 @@ ul {
     border-radius: .5em;
 }
 
-#facebook-icon {
-    width: 40px;
-    height: 40px;
-    background-color: whitesmoke;
-    margin-right: .5rem;
-    border-radius: .3em;
-}
-
 #linkedin-icon {
-    width: 40px;
-    height: 40px;
-    background-color: whitesmoke;
-    margin-right: .5rem;
-    border-radius: .3em;
-}
-
-#twitter-icon {
     width: 40px;
     height: 40px;
     background-color: whitesmoke;

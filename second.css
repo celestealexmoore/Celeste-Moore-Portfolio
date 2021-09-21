@@ -11,10 +11,12 @@ header{
 
 a{
     color:rgb(83, 83, 83);
+    text-decoration: none;
 }
 
 a:hover{
     color: white;
+    text-decoration: underline;
 }
 
 h3{
@@ -24,4 +26,13 @@ h3{
 
 ul{
     margin-top: 1px;
+}
+
+.class{
+    text-align: left;
+}
+
+#downloadLink{
+    position: absolute;
+    left: 80%;
 }
