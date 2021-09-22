@@ -1,17 +1,13 @@
 body {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     padding: 0;
     margin: 0;
-    background-color: #5D001E;
+    background-color: rgb(253, 209, 217);;
     overflow-x: hidden;
     width: 100%;
     height: 100%;
     display:flex;
     flex-direction: column;
-}
-
-#section1{
-    flex-wrap: wrap;
 }
 
 #head-shot {
@@ -37,15 +33,20 @@ body {
     font-family: sans-serif;
 }
 
+#backgroundwNav{
+    flex-wrap: wrap;
+}
+
 .navigation-bar {
     position: fixed;
     background-color: #5D001E;
-    padding: 5px 0 5px 0;
+    padding: 10px 0 10px 0;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     color: #E3E2DF;
     width: 100%;
+    z-index: 1;
 }
 
 ul.navigation-bar {
@@ -70,6 +71,9 @@ font-family: 'Arial Narrow Bold', sans-serif;
 /* If you want to set another color for the navigation links when the mouse is over them, use a:hover */
 .navigation-bar a:hover {
 color:rgb(253, 209, 217);
+/* text-shadow:2px 8px 4px 2px #0ff; */
+text-shadow:0 0 30px #FF0000, 0 0 30px white;
+font-size: larger;
 }
 
 #section2{
@@ -109,7 +113,7 @@ color:rgb(253, 209, 217);
 }
 
 #crab-game {
-    width: 400px;
+    width: 40%;
     height: auto;
     border: #5D001E solid 5px;
     background-color: #E3E2DF;
@@ -117,7 +121,7 @@ color:rgb(253, 209, 217);
     flex-wrap: wrap;
     align-self: center;
 }
-.overlay {
+/* .overlay {
     margin: 30px;
     padding: 3px;
     background: rgba(0, 0, 0, 0.5);
@@ -125,10 +129,30 @@ color:rgb(253, 209, 217);
     font-size: 18px;
     align-items: center;
     position: absolute;
-}
+} */
 
 #foodly {
-    width: 400px;
+    width: 40%;
+    height: auto;
+    border: #5D001E solid 5px;
+    background-color: #E3E2DF;
+    margin:30px;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+#scissorsPalace {
+    width: 40%;
+    height: auto;
+    border: #5D001E solid 5px;
+    background-color: #E3E2DF;
+    margin:30px;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+#dzm {
+    width: 40%;
     height: auto;
     border: #5D001E solid 5px;
     background-color: #E3E2DF;
@@ -150,16 +174,19 @@ ul {
 #footer {
     height: auto;
     background-color: #5D001E;
-    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     color: #E3E2DF;
+    border-top: 2px solid white;
+    padding: 10px;
 }
 
 #copywrong {
     height: auto;
     margin-bottom: 1rem;
+    float:left;
+    z-index: 1;
 }
 
 /* Icons in order left-to-right */
@@ -170,6 +197,8 @@ ul {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    float:right;
+    z-index: 1;
     /* there is a blue line under the icons I want to get rid of */
 }
 
