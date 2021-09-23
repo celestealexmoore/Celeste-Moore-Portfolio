@@ -186,15 +186,16 @@ font-size: larger;
     margin: auto;
 }
 
-#crab-game {
+.individualProject{
     width: 40%;
     height: auto;
-    border: #5D001E solid 5px;
-    background-color: #E3E2DF;
+    border: white solid 2px;
+    padding: 10px;
     margin:30px;
     flex-wrap: wrap;
     align-self: center;
 }
+
 /* .overlay {
     margin: 30px;
     padding: 3px;
@@ -204,36 +205,6 @@ font-size: larger;
     align-items: center;
     position: absolute;
 } */
-
-#foodly {
-    width: 40%;
-    height: auto;
-    border: #5D001E solid 5px;
-    background-color: #E3E2DF;
-    margin:30px;
-    flex-wrap: wrap;
-    align-self: center;
-}
-
-#scissorsPalace {
-    width: 40%;
-    height: auto;
-    border: #5D001E solid 5px;
-    background-color: #E3E2DF;
-    margin:30px;
-    flex-wrap: wrap;
-    align-self: center;
-}
-
-#dzm {
-    width: 40%;
-    height: auto;
-    border: #5D001E solid 5px;
-    background-color: #E3E2DF;
-    margin:30px;
-    flex-wrap: wrap;
-    align-self: center;
-}
 
 ul {
     list-style-type: square;
