@@ -242,60 +242,27 @@ ul {
     text-align: center;
 }
 
-/* Icons in order left-to-right */
-#contact-me {
-    /* width: 20%; */
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    float:right;
-    z-index: 1;
-    /* there is a blue line under the icons I want to get rid of */
-}
+/* div for "contact" and icons */
 
 #footerContact{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 10px; 
+    text-align: center;
 }
 
-#call-icon {
+/* icon div */
+#contact-me {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.icon{
     width: 40px;
     height: 40px;
-    background-color: whitesmoke;
-    margin-right: .5rem;
-    border-radius: .5em;
-}
-
-#email-icon {
-    width: 50px;
-    height: 40px;
-    background-color: whitesmoke;
-    margin-right: .5rem;
-    border-radius: .5em;
-}
-
-#instagram-icon {
-    width: 40px;
-    height: 40px;
-    background-color: whitesmoke;
-    margin-right: .5rem;
-    border-radius: .5em;
-}
-
-#linkedin-icon {
-    width: 40px;
-    height: 40px;
-    background-color: whitesmoke;
-    margin-right: .5rem;
-    border-radius: .3em;
-}
-
-#github-icon {
-    width: 40px;
-    height: 40px;
-    background-color: whitesmoke;
-    border-radius: .3em;
 }
