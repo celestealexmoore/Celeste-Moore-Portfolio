@@ -190,10 +190,19 @@ font-size: larger;
     width: 40%;
     height: auto;
     border: white solid 2px;
-    padding: 10px;
+    padding: 15px;
     margin:30px;
     flex-wrap: wrap;
     align-self: center;
+}
+
+.individualProject:hover{
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem #5D001E,
+    0 0 0.8rem #5D001E,
+    0 0 2.8rem #5D001E,
+    inset 0 0 1.3rem #5D001E;
 }
 
 /* .overlay {
