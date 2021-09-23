@@ -3,7 +3,7 @@ body {
     margin: 0;
     background-color: #FFDDDD;
     color: rgb(112, 109, 109);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     max-width:100%;
     height: 100%;
     display:flex;
@@ -19,9 +19,8 @@ body {
     width: 100%;
     height: 70vh;
     background-image: linear-gradient(to top, #FFDDDD, transparent), url('./assets/photos/head-shot.jpg');
+    /* background-size: cover; */
     background-size: cover;
-    z-index: 0;
-    margin: 0;
 }
 
 #header {
@@ -84,24 +83,29 @@ body {
     height: 400px;
     width: 400px;
     border-radius: 50%;
+    /* clip-path: circle(200px);
+    height:400px;
+    width:400px; */
     padding: 10px;
     border: solid white 2px;
 }
-
+/* 
 #backgroundwNav{
+    display:flex;
+    flex-direction: column;
     flex-wrap: wrap;
-}
+} */
 
 .navigation-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     position: fixed;
     background-color: #5D001E;
     padding: 10px 0 10px 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     color: #E3E2DF;
-    width: 100%;
-    z-index: 2;
+    width: 99%;
+    z-index: 1;
 }
 
 ul.navigation-bar {
@@ -111,12 +115,11 @@ ul.navigation-bar {
 .navigation-bar li {
     display: inline;
     padding: 0 10px 0 10px;
-    font-size: 20px;
+    font-size: 100%;
 }
 
 .navigation-bar a {
 text-decoration: none; 
-/* This is so there's no underline on the nagivation links */
 color:#E3E2DF;
 padding: 8px;
 font-variant: normal;
@@ -125,10 +128,15 @@ font-family: 'Arial Narrow Bold', sans-serif;
 
 /* If you want to set another color for the navigation links when the mouse is over them, use a:hover */
 .navigation-bar a:hover {
-color:rgb(253, 209, 217);
-/* text-shadow:2px 8px 4px 2px #0ff; */
-text-shadow:0 0 30px #FF0000, 0 0 30px white;
+color:white;
+/* text-shadow:0 0 30px white, 0 0 30px white; */
 font-size: larger;
+box-shadow: 0 0 .2rem #fff,
+0 0 .2rem #fff,
+0 0 2rem white,
+0 0 0.8rem white,
+0 0 2.8rem white,
+inset 0 0 1.3rem white;
 }
 
 #section2{
@@ -137,6 +145,10 @@ font-size: larger;
 
 #intro {
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 #bioDescription{
@@ -210,12 +222,20 @@ font-size: larger;
 }
 
 .individualProject:hover{
+
     box-shadow: 0 0 .2rem #fff,
+0 0 .2rem #fff,
+0 0 2rem white,
+0 0 0.8rem white,
+0 0 2.8rem white,
+inset 0 0 1.3rem white;
+
+    /* box-shadow: 0 0 .2rem #fff,
     0 0 .2rem #fff,
     0 0 2rem #5D001E,
     0 0 0.8rem #5D001E,
     0 0 2.8rem #5D001E,
-    inset 0 0 1.3rem #5D001E;
+    inset 0 0 1.3rem #5D001E; */
 }
 
 /* .overlay {
@@ -234,21 +254,46 @@ ul {
 }
  /* Footer Section */
 
-#section3{
-    flex-wrap: nowrap;
-}
-
 #footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width:100%;
     background-color: #5D001E;
     justify-content: space-evenly;
     color: #E3E2DF;
     border-top: 2px solid white;
-    padding: 10px;
+    padding: 20px;
 }
 
+.footerHeader{
+    border-bottom: 1px white solid;
+    padding: 15px;
+    border-radius: 5%;
+}
+
+#aboutFooter{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align:center;
+}
+
+/* question about this with Bryant */
+
+#aboutFooter ul li{
+    list-style-type: none;
+}
+
+#aboutFooter ul li a{
+    text-decoration: none;
+    color:#E3E2DF;
+    list-style-type: none;
+}
+
+#aboutFooter ul li a:hover{
+    text-decoration: underline;
+}
 
 
 #copywrong {
@@ -279,4 +324,14 @@ ul {
 .icon{
     width: 40px;
     height: 40px;
+    margin: 2px;
 }
+
+.icon:hover{
+        box-shadow: 0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 2rem white,
+        0 0 0.8rem white,
+        0 0 2.8rem white,
+        inset 0 0 1.3rem white;
+    }
