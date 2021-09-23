@@ -84,9 +84,7 @@ body {
     height: 400px;
     width: 400px;
     border-radius: 50%;
-    transform: scaleX(-1);
-    object-fit: cover;
-    z-index:0;
+    padding: 10px;
     border: solid white 2px;
 }
 
