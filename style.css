@@ -78,16 +78,32 @@ body {
     width: 200px;
 }
 
+/* #bio{
+    length: auto;
+} */
+
 #celestePhotoPic{
-    margin: 25px 0 25px 0;
-    height: 400px;
+    /* margin: 25px 0 25px 0;
+    height: auto;
     width: 400px;
     border-radius: 50%;
-    /* clip-path: circle(200px);
+    clip-path: circle(200px);
     height:400px;
-    width:400px; */
+    width:400px;*/
+    clip-path: circle(175px);
+    border-radius: 50%;
+    width: 400px;
+    height: 375px;
+    object-fit: cover;
+    object-position: 10% 20%;
     padding: 10px;
     border: solid white 2px;
+}
+
+#paragraph{
+    height:1000px;
+    border: 1px solid white;
+    padding: 10px;
 }
 /* 
 #backgroundwNav{
@@ -185,6 +201,12 @@ inset 0 0 1.3rem white;
 
 #techSkills{
     text-align: center;
+}
+
+.codeIcons{
+    width: 100px;
+    height: auto;
+
 }
 
 #github-repository {
