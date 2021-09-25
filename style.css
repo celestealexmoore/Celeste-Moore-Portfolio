@@ -100,11 +100,12 @@ body {
     border: solid white 2px;
 }
 
-#paragraph{
-    height:1000px;
+/* #paragraph{
+    height:1500px;
     border: 1px solid white;
     padding: 10px;
-}
+} */
+
 /* 
 #backgroundwNav{
     display:flex;
