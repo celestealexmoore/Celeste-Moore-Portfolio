@@ -43,7 +43,7 @@ body {
 
 #bioDescription{
     width: 400px;
-    height: 400px;
+    height: auto;
     float: right;
     text-align: center;
     margin-top:20px;
@@ -59,7 +59,6 @@ body {
     font-weight: 800;
     z-index: 1;
     background-color: transparent;
-    bottom: 0;
     font-family: sans-serif;
 }
 
@@ -92,12 +91,6 @@ body {
     padding: 10px;
     border: solid white 2px;
 }
-
-/* #paragraph{
-    height:1500px;
-    border: 1px solid white;
-    padding: 10px;
-} */
 
 /* 
 #backgroundwNav{
@@ -175,6 +168,10 @@ inset 0 0 1.3rem white;
     color: gray;
 }
 
+/* #about-me {
+    height:auto;
+} */
+
 #portfolio {
     Background-color: #FFDDDD;
     border-style: solid #c83349 12px;
@@ -189,9 +186,17 @@ inset 0 0 1.3rem white;
 }
 
 .codeIcons{
-    width: 100px;
-    height: auto;
+    width: 12%;
+    margin-top: 5%;
 
+}
+
+#favIcon{
+    position: absolute;
+    margin: -30px 0 0 5%;
+    width: 25%;
+    height: auto;
+    z-index: -1;
 }
 
 #github-repository {
@@ -212,8 +217,7 @@ inset 0 0 1.3rem white;
 
 #individualProjectDiv{
     display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
@@ -228,20 +232,12 @@ inset 0 0 1.3rem white;
 }
 
 .individualProject:hover{
-
     box-shadow: 0 0 .2rem #fff,
-0 0 .2rem #fff,
-0 0 2rem white,
-0 0 0.8rem white,
-0 0 2.8rem white,
-inset 0 0 1.3rem white;
-
-    /* box-shadow: 0 0 .2rem #fff,
     0 0 .2rem #fff,
-    0 0 2rem #5D001E,
-    0 0 0.8rem #5D001E,
-    0 0 2.8rem #5D001E,
-    inset 0 0 1.3rem #5D001E; */
+    0 0 2rem white,
+    0 0 0.8rem white,
+    0 0 2.8rem white,
+    inset 0 0 1.3rem white;
 }
 
 /* .overlay {
@@ -262,11 +258,10 @@ ul {
 
 #footer {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width:100%;
+    flex-flow: row wrap;
     background-color: #5D001E;
-    justify-content: space-evenly;
+    justify-content:space-between;
+    align-items:center;
     color: #E3E2DF;
     border-top: 2px solid white;
     padding: 20px;
@@ -280,7 +275,7 @@ ul {
 
 #aboutFooter{
     display:flex;
-    flex-flow: column-wrap;
+    flex-flow: column wrap;
     text-align:center;
 }
 
