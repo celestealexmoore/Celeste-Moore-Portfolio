@@ -1,13 +1,14 @@
-body {
-    /* box-sizing: border-box; */
+*{
+    box-sizing: border-box;
+    padding: 0;
     margin: 0;
+}
+
+body {
     background-color: #FFDDDD;
     color: rgb(112, 109, 109);
-    /* overflow-x: hidden; */
-    max-width:100%;
-    height: 100%;
     display:flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     margin: auto;
     font-size: large;
     font-family: sans-serif;
@@ -19,8 +20,8 @@ body {
     width: 100%;
     height: 70vh;
     background-image: linear-gradient(to top, #FFDDDD, transparent), url('./assets/photos/head-shot.jpg');
-    /* background-size: cover; */
     background-size: cover;
+    margin: 0 auto;
 }
 
 #header {
@@ -31,14 +32,12 @@ body {
     z-index: 1;
     background-color: transparent;
     bottom: 0;
-    left: .5em;
     font-family: sans-serif;
 }
 
 #bio{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: flex;
+    flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
@@ -61,14 +60,12 @@ body {
     z-index: 1;
     background-color: transparent;
     bottom: 0;
-    left: .5em;
     font-family: sans-serif;
 }
 
 #descriptionParent{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     /* margin: 0 auto; */
     justify-content: space-evenly;
 }
@@ -78,10 +75,6 @@ body {
     width: 200px;
 }
 
-/* #bio{
-    length: auto;
-} */
-
 #celestePhotoPic{
     /* margin: 25px 0 25px 0;
     height: auto;
@@ -89,7 +82,7 @@ body {
     border-radius: 50%;
     clip-path: circle(200px);
     height:400px;
-    width:400px;*/
+    width:400px; */
     clip-path: circle(175px);
     border-radius: 50%;
     width: 400px;
@@ -116,12 +109,12 @@ body {
 .navigation-bar {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     position: fixed;
     background-color: #5D001E;
     padding: 10px 0 10px 0;
     color: #E3E2DF;
-    width: 99%;
+    width:100%;
     z-index: 1;
 }
 
@@ -163,17 +156,8 @@ inset 0 0 1.3rem white;
 #intro {
     padding: 30px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     align-items: center;
-}
-
-#bioDescription{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 0 auto;
-    max-width:100%;
 }
 
 #namePic{
@@ -220,8 +204,7 @@ inset 0 0 1.3rem white;
 
 #projects{
     display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-flow: column wrap;
     Background-color: #FFDDDD;
     margin: 0 auto;
     max-width: 100%;
@@ -297,8 +280,7 @@ ul {
 
 #aboutFooter{
     display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column-wrap;
     text-align:center;
 }
 
@@ -328,8 +310,7 @@ ul {
 
 #footerContact{
     display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     padding: 10px; 
     text-align: center;
 }
@@ -338,8 +319,7 @@ ul {
 #contact-me {
     height: auto;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
@@ -351,10 +331,16 @@ ul {
 }
 
 .icon:hover{
-        box-shadow: 0 0 .2rem #fff,
-        0 0 .2rem #fff,
-        0 0 2rem white,
-        0 0 0.8rem white,
-        0 0 2.8rem white,
-        inset 0 0 1.3rem white;
+    box-shadow: 0 0 .2rem #fff,
+    0 0 .2rem #fff,
+    0 0 2rem white,
+    0 0 0.8rem white,
+    0 0 2.8rem white,
+    inset 0 0 1.3rem white;
+}
+
+@media (max-width: 600px) {
+    #bioDescription {
+        width: 75%;
     }
+}
