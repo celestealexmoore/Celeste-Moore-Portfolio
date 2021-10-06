@@ -164,14 +164,6 @@ inset 0 0 1.3rem white;
     margin: 0 auto;
 }
 
-#instagram-hyperlink {
-    color: gray;
-}
-
-/* #about-me {
-    height:auto;
-} */
-
 #portfolio {
     Background-color: #FFDDDD;
     border-style: solid #c83349 12px;
@@ -221,8 +213,8 @@ inset 0 0 1.3rem white;
     justify-content: space-evenly;
 }
 
-.individualProject{
-    width: 350px;
+.individualProject {
+    width: 320px;
     height: auto;
     border: white solid 2px;
     padding: 15px;
@@ -240,15 +232,21 @@ inset 0 0 1.3rem white;
     inset 0 0 1.3rem white;
 }
 
-/* .overlay {
-    margin: 30px;
-    padding: 3px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 18px;
-    align-items: center;
+/* overlay measurements are wacky */
+
+.overlay {
     position: absolute;
-} */
+    padding: 4px;
+    /* background: #5D001E;
+    opacity: 0.8; */
+    color: #5D001E;;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    /* align-self: center; */
+    margin:0 0 0 30px;
+    width: 320px;
+}
 
 ul {
     list-style-type: square;
