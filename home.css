@@ -335,3 +335,28 @@ ul {
     }
 
 }
+
+@media (max-width: 399px) {
+    #projects {
+        margin-top: -330px;
+    }
+    .individualProject {
+        width: 80%;
+        height: auto;
+        border: white solid 2px;
+        padding: 15px;
+        margin:30px;
+        flex-wrap: wrap;
+        align-self: center;
+    }
+    .overlay {
+        position: absolute;
+        padding: 4px;
+        color: #5D001E;;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        margin:0 0 0 30px;
+        width: 80%;
+    }
+}
