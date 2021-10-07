@@ -19,7 +19,7 @@ body {
     color: 'white';
     width: 100%;
     height: 70vh;
-    background-image: linear-gradient(to top, #FFDDDD, transparent), url('./assets/photos/head-shot.jpg');
+    background-image: linear-gradient(to top, #FFDDDD, transparent), url('./photos/head-shot.jpg');
     background-size: cover;
     margin: 0 auto;
 }
@@ -326,7 +326,7 @@ ul {
         position: relative;
         color: 'white';
         width: 100%;
-        background-image: linear-gradient(to top, #FFDDDD, transparent), url('./assets/photos/head-shot-2.png');
+        background-image: linear-gradient(to top, #FFDDDD, transparent), url('./photos/head-shot-2.png');
         background-size: cover;
         margin: 0 auto;
     }
