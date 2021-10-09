@@ -330,6 +330,17 @@ svg {
     inset 0 0 1.3rem white;
 }
 
+@media (max-width: 992px) {
+    #footer {
+        margin-top: 30px;
+        background-color: #5D001E;
+    }
+    #footer svg {
+        display: none;
+    }
+
+}
+
 @media (max-width: 500px) {
     #bioDescription {
         width: 75%;
@@ -344,6 +355,12 @@ svg {
     }
     #footer {
         margin-top: 30px;
+        background-color: #5D001E;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    #footer svg {
+        display: none;
     }
 
 }
