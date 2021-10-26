@@ -1,11 +1,11 @@
 // Get the modal
 let myModal = document.getElementById("myModal");
 let scissorsModal = document.getElementById("scissorsModal");
-// let dzmModal = document.getElementById("dzmModal");
-// let foodlyModal = document.getElementById("foodlyModal");
-// let fahliaModal = document.getElementById("fahliaModal");
-// let karaokeModal = document.getElementById("karaokeModal");
-// let figmaModal = document.getElementById("figmaModal");
+let dzmModal = document.getElementById("dzmModal");
+let foodlyModal = document.getElementById("foodlyModal");
+let fahliaModal = document.getElementById("fahliaModal");
+let karaokeModal = document.getElementById("karaokeModal");
+let figmaModal = document.getElementById("figmaModal");
 
 // Get the button that opens the modal
 let myBtn = document.getElementById("myBtn");
