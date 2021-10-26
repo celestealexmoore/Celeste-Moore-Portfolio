@@ -1,14 +1,14 @@
 // Get the modal
-let modal = document.getElementById("myModal");
+let myModal = document.getElementById("myModal");
 let scissorsModal = document.getElementById("scissorsModal");
-let dzmModal = document.getElementById("dzmModal");
-let foodlyModal = document.getElementById("foodlyModal");
-let fahliaModal = document.getElementById("fahliaModal");
-let karaokeModal = document.getElementById("karaokeModal");
-let figmaModal = document.getElementById("figmaModal");
+// let dzmModal = document.getElementById("dzmModal");
+// let foodlyModal = document.getElementById("foodlyModal");
+// let fahliaModal = document.getElementById("fahliaModal");
+// let karaokeModal = document.getElementById("karaokeModal");
+// let figmaModal = document.getElementById("figmaModal");
 
 // Get the button that opens the modal
-let btn = document.getElementById("myBtn");
+let myBtn = document.getElementById("myBtn");
 let scissorsBtn = document.getElementById("scissorsBtn");
 let dzmBtn = document.getElementById("dzmBtn");
 let foodlyBtn = document.getElementById("foodlyBtn");
@@ -17,17 +17,17 @@ let karaokeBtn = document.getElementById("karaokeBtn");
 let figmaBtn = document.getElementById("figmaBtn");
 
 // Get the <span> element that closes the modal
-let span = document.getElementById("close")[0];
-let scissorsSpan = document.getElementById("scissorsClose")[0];
-let dzmSpan = document.getElementById("dzmClose")[0];
-let foodlySpan = document.getElementById("foodlyClose")[0];
-let fahliaSpan = document.getElementById("fahliaClose")[0];
-let karaokeSpan = document.getElementById("karaokeClose")[0];
-let figmaSpan = document.getElementById("figmaClose")[0];
+let span = document.getElementsByClassName("close")[0];
+let scissorsSpan = document.getElementsByClassName("scissorsClose")[0];
+let dzmSpan = document.getElementsByClassName("dzmClose")[0];
+let foodlySpan = document.getElementsByClassName("foodlyClose")[0];
+let fahliaSpan = document.getElementsByClassName("fahliaClose")[0];
+let karaokeSpan = document.getElementsByClassName("karaokeClose")[0];
+let figmaSpan = document.getElementsByClassName("figmaClose")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function () {
-    modal.style.display = "block";
+myBtn.onclick = function () {
+    myModal.style.display = "block";
 };
 scissorsBtn.onclick = function () {
     scissorsModal.style.display = "block";
@@ -48,26 +48,25 @@ figmaBtn.onclick = function () {
     figmaModal.style.display = "block";
 };
 
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
-    modal.style.display = "none";
+    myModal.style.display = "none";
 };
 scissorsSpan.onclick = function () {
-    modal.style.display = "none";
+    scissorsModal.style.display = "none";
 };
 dzmSpan.onclick = function () {
-    modal.style.display = "none";
+    dzmModal.style.display = "none";
 };
 foodlySpan.onclick = function () {
-    modal.style.display = "none";
+    foodlyModal.style.display = "none";
 };
 fahliaSpan.onclick = function () {
-    modal.style.display = "none";
+    fahliaModal.style.display = "none";
 };
 karaokeSpan.onclick = function () {
-    modal.style.display = "none";
+    karaokeModal.style.display = "none";
 };
 figmaSpan.onclick = function () {
-    modal.style.display = "none";
+    figmaModal.style.display = "none";
 };
