@@ -104,10 +104,6 @@ body {
     z-index: 2;
 }
 
-ul.navigation-bar {
-    margin-top: 0px;
-}
-
 .navigation-bar li {
     display: inline;
     padding: 0 10px 0 10px;
@@ -199,23 +195,30 @@ inset 0 0 1.3rem white;
     max-width: 100%;
 }
 
-#individualProjectDiv{
+#ProjectDiv{
     display:flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-.individualProject {
+.individualProject{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.projectImg {
     width: 320px;
     height: auto;
     border: white solid 2px;
     padding: 15px;
-    margin:30px;
-    flex-wrap: wrap;
+    margin:10px;
     align-self: center;
 }
 
-.individualProject:hover{
+.projectImg:hover{
     box-shadow: 0 0 .2rem #fff,
     0 0 .2rem #fff,
     0 0 2rem white,
@@ -227,23 +230,72 @@ inset 0 0 1.3rem white;
 /* overlay measurements are wacky */
 
 .overlay {
-    position: absolute;
-    padding: 4px;
-    /* background: #5D001E;
-    opacity: 0.8; */
+    position: relative;
     color: #5D001E;;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-    /* align-self: center; */
-    margin:0 0 0 30px;
-    width: 320px;
 }
 
-ul {
-    list-style-type: square;
-    font-size: large;
+/* The Modal (background) */
+.modal {
+    display: none;
+    z-index: 1;
+    width: 320px;
+    height: auto; /* Full height */
+    background-color: rgba(255, 255, 255, 0.9); /* Black w/ opacity */
+    position: absolute;
+    color: #5D001E;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: -10px;
+} 
+
+  /* Modal Content/Box */
+.modal-content {
+    background-color: "";
+    padding: 20px;
+    width: 100%;
+    animation-name: animatetop;
+    animation-duration: 0.4s
 }
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.myBtn {
+    position: relative;
+    width:30%;
+    height: 30px;
+    background-color: #5D001E;
+    color: white;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px #3b1b44;
+    transition: all 0.3s ease 0s;
+    cursor:pointer;
+    margin-bottom: 20px;
+}
+
+  /* The Close Button */
+.close {
+    color:#5D001E;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(184, 2, 2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
  /* Footer Section */
 
 footer svg{
@@ -280,15 +332,6 @@ svg {
     text-align:center;
 }
 
-#aboutFooter ul li {
-    list-style-type: none;
-}
-
-#aboutFooter ul li a{
-    text-decoration: none;
-    color:#E3E2DF;
-}
-
 #aboutFooter ul li a:hover{
     text-decoration: underline;
 }
@@ -313,7 +356,6 @@ svg {
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
-
 
 .icon{
     width: 40px;
