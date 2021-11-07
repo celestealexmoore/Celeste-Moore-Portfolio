@@ -6,6 +6,7 @@ let foodlyModal = document.getElementById("foodlyModal");
 let fahliaModal = document.getElementById("fahliaModal");
 let karaokeModal = document.getElementById("karaokeModal");
 let figmaModal = document.getElementById("figmaModal");
+let rpsModal = document.getElementById("rpsModal");
 
 // Get the button that opens the modal
 let myBtn = document.getElementById("myBtn");
@@ -15,6 +16,7 @@ let foodlyBtn = document.getElementById("foodlyBtn");
 let fahliaBtn = document.getElementById("fahliaBtn");
 let karaokeBtn = document.getElementById("karaokeBtn");
 let figmaBtn = document.getElementById("figmaBtn");
+let rpsBtn = document.getElementById("rpsBtn");
 
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
@@ -24,6 +26,7 @@ let foodlySpan = document.getElementsByClassName("foodlyClose")[0];
 let fahliaSpan = document.getElementsByClassName("fahliaClose")[0];
 let karaokeSpan = document.getElementsByClassName("karaokeClose")[0];
 let figmaSpan = document.getElementsByClassName("figmaClose")[0];
+let rpsSpan = document.getElementsByClassName("rpsClose")[0];
 
 // When the user clicks on the button, open the modal
 myBtn.onclick = function () {
@@ -47,6 +50,9 @@ karaokeBtn.onclick = function () {
 figmaBtn.onclick = function () {
     figmaModal.style.display = "block";
 };
+rpsBtn.onclick = function () {
+    rpsModal.style.display = "block";
+};
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
@@ -69,4 +75,7 @@ karaokeSpan.onclick = function () {
 };
 figmaSpan.onclick = function () {
     figmaModal.style.display = "none";
+};
+rpsSpan.onclick = function () {
+    rpsModal.style.display = "none";
 };
