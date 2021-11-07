@@ -308,7 +308,7 @@ footer svg{
     display: flex;
     flex-flow: row wrap;
     background-color: #5D001E;
-    background-color: transparent;
+    /* background-color: transparent; */
     justify-content: space-evenly;
     align-items:center;
     color: #E3E2DF;
